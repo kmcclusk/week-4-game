@@ -1,0 +1,48 @@
+body {
+	background-image: url("http://i.imgur.com/h92ThnW.jpg");
+	background-attachment: fixed;
+	background-position:200px 30px ;
+	background-repeat: repeat;
+}
+
+div.jumbotron {
+	background: #faf9f3;
+	font-family: Monoton;
+	color:black;
+	text-align: center;
+}
+p.numberToGuess{
+	font-family: Share;
+	font-size:300%;
+	color:#5c3e04;
+	text-align:center;
+}
+div.score {
+	font-family: Share;
+	font-size:250%;
+	color:#5c3e04;
+	text-align: center;
+}
+
+.recordImage {
+	width:auto;
+	height:auto;
+	max-width:30%;
+}
+
+#wins {
+	font-family: Share;
+	font-size:300%;
+	color:#5c3e04;
+}
+
+#losses {
+	font-family: Share;
+	font-size:300%;
+	color:#5c3e04;
+}
+
+.rotate{
+	transform: rotate(360deg);
+	transition: 1s;
+}
