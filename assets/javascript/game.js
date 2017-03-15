@@ -54,7 +54,11 @@ function loser() {
 $("#record-1").on("click", function() {
 	counter += record1;
 	$(".score").text(counter);
-	$("#record-1").addClass("rotate");
+    var el = $('#record-1').addClass('rotate');
+
+	    setTimeout(function() {
+	        el.removeClass('rotate');
+	    }, 1000);
 
 		if (counter === random){
 			winner();
@@ -66,7 +70,11 @@ $("#record-1").on("click", function() {
 $("#record-2").on("click", function() {
 	counter += record2;
 	$(".score").text(counter);
-	$("#record-2").addClass("rotate");
+	var el = $('#record-2').addClass('rotate');
+
+	    setTimeout(function() {
+	        el.removeClass('rotate');
+	    }, 1000);
 
 		if (counter === random){
 			winner();
@@ -78,7 +86,11 @@ $("#record-2").on("click", function() {
 $("#record-3").on("click", function() {
 	counter += record3;
 	$(".score").text(counter);
-	$("#record-3").addClass("rotate");
+	var el = $('#record-3').addClass('rotate');
+
+	    setTimeout(function() {
+	        el.removeClass('rotate');
+	    }, 1000);
 
 		if (counter === random){
 			winner();
@@ -90,8 +102,11 @@ $("#record-3").on("click", function() {
 $("#record-4").on("click", function() {
 	counter += record4;
 	$(".score").text(counter);
-	$("#record-4").addClass("rotate");
+	var el = $('#record-4').addClass('rotate');
 
+	    setTimeout(function() {
+	        el.removeClass('rotate');
+	    }, 1000);
 		if (counter === random){
 			winner();
 		} else if (counter > random) {
